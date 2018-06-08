@@ -1,6 +1,6 @@
 {
   "name": "scoreboard-react",
-  "version": "1.0.0",
+  "version": "1.0.4",
   "description": "a scoreboard animation with react",
   "main": "index.js",
   "scripts": {

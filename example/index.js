@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
-// import Scoreboard from '../index';
+import Scoreboard from '../index';
 
-import Scoreboard from '../lib';
-import '../lib/index.css';
-console.log('Scoreboardffffff',Scoreboard);
+// import Scoreboard from '../lib';
+// import '../lib/index.css';
 const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
 class App extends Component {
     state = {
