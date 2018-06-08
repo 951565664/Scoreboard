@@ -7,7 +7,7 @@
     "start": "cross-env MY_NODE_ENV=example webpack-dev-server --open",
     "build:example": "cross-env MY_NODE_ENV=example webpack",
     "build": "webpack",
-    "markdown": "node scripts/markdown",
+    "markdown": "node scripts/markdown"
   },
   "repository": {
     "type": "git",
