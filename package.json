@@ -4,10 +4,10 @@
   "description": "a scoreboard animation with react",
   "main": "index.js",
   "scripts": {
-    "start": "cross-env MY_NODE_ENV=example webpack-dev-server --open",
-    "start:testPackage": "cross-env MY_NODE_ENV=testPackage webpack-dev-server --open",
-    "build:example": "cross-env MY_NODE_ENV=example webpack",
-    "build": "webpack"
+    "start": "cross-env MY_NODE_ENV=example webpack-dev-server --open npm run markdown",
+    "build:example": "cross-env MY_NODE_ENV=example webpack npm run markdown",
+    "build": "webpack",
+    "markdown": "node scripts/markdown"
   },
   "repository": {
     "type": "git",
@@ -33,15 +33,17 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
+    "cheerio": "^1.0.0-rc.2",
     "css-loader": "^0.28.11",
     "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^1.1.6",
+    "html-loader": "^0.5.5",
     "less": "^3.0.4",
     "less-loader": "^4.1.0",
+    "markdown-it": "^8.4.1",
     "style-loader": "^0.21.0",
     "webpack": "^3.10.0",
-    "webpack-dev-server": "^2.11.1",
     "webpack-cli": "^3.0.2",
-    "file-loader": "^1.1.6",
-    "html-loader": "^0.5.5"
+    "webpack-dev-server": "^2.11.1"
   }
 }
