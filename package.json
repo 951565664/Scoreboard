@@ -4,10 +4,10 @@
   "description": "a scoreboard animation with react",
   "main": "index.js",
   "scripts": {
-    "start": "cross-env MY_NODE_ENV=example webpack-dev-server --open npm run markdown",
-    "build:example": "cross-env MY_NODE_ENV=example webpack npm run markdown",
+    "start": "cross-env MY_NODE_ENV=example webpack-dev-server --open",
+    "build:example": "cross-env MY_NODE_ENV=example webpack",
     "build": "webpack",
-    "markdown": "node scripts/markdown"
+    "markdown": "node scripts/markdown",
   },
   "repository": {
     "type": "git",
