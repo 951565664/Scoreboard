@@ -1,28 +1,41 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
 .animation-num-box {
-    height: 0.48rem;
+    height: 48px;
     overflow: hidden;
-    display: inline-block;
-}
-
-.animation-num {
-    transition: margin .5s;
-    -webkit-transition: margin .5s;
-    -o-transition: margin .5s;
-    -ms-transition: margin .5s; // float: left;
-    display: block;
-    &>li {
-        width: 100%;
-        height: 0.48rem;
-        vertical-align: top;
-        clear: both;
+    .animation-num-item-box {
+        display: inline-block;
+        height: 100%;
+        overflow: hidden;
     }
-}
-
-.generate-currentNum(9);
-.generate-currentNum(@n, @i: 0) when (@i =< @n) {
-    .currentNum-@{i} {
-        .animation-num();
-        margin-top: @i *-0.48rem;
+    .animation-num {
+        transition: margin;
+        -webkit-transition: margin;
+        -o-transition: margin;
+        -ms-transition: margin;
+        float: left;
+        display: block;
+        height: 100%;
+        &>li {
+            list-style: none;
+            width: 100%; //  font-size:        
+            height: 100%;
+            display: table;
+            .li-inner {
+                display: table-cell;
+                vertical-align: middle;
+            }
+        }
     }
-    .generate-currentNum(@n, (@i + 1));
+    .generate-currentNum(9);
+    .generate-currentNum(@n, @i: 0) when (@i =< @n) {
+        .currentNum-@{i} {
+            .animation-num(); //  font-size:        
+            margin-top: @i *-48px;
+        }
+        .generate-currentNum(@n, (@i + 1));
+    }
 }

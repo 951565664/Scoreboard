@@ -1,2 +1,3 @@
-import AnimationNum from './animationNum';
-export default AnimationNum;
+import Scoreboard from './scoreboard';
+console.log('Scoreboard',Scoreboard)
+export default Scoreboard;

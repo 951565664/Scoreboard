@@ -1,73 +1,80 @@
 const path = require('path');
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
+// const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+// const HtmlWebpackPlugin = require('html-webpack-plugin');
+// const CleanWebpackPlugin = require('clean-webpack-plugin');
 const webpack = require('webpack');
+const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 let config = {
     entry: './src/index.js',
     output: {
         filename: 'index.js',
-        path: path.resolve(__dirname, 'lib')
+        path: path.resolve(__dirname, 'lib'),
+        libraryTarget: 'umd'
     },
     plugins: [
-        new MiniCssExtractPlugin({
-            filename: "[name].css",
-            chunkFilename: "[id].css"
-        })
+        new ExtractTextPlugin('index.css'),
+        new webpack.NamedModulesPlugin(),
+        new webpack.HotModuleReplacementPlugin()
     ],
     module: {
         rules: [
             {
-                test: /\.less$/,
-                use: [
-                    MiniCssExtractPlugin.loader,
-                    "style-loader", // creates style nodes from JS strings
-                    "css-loader", // translates CSS into CommonJS
-                    "less-loader" // compiles Sass to CSS
-                ]
+                test: /\.(css|less)$/,
+                include: [/src/, /example/],
+                use: ExtractTextPlugin.extract({
+                    fallback: "style-loader",
+                    use: ["css-loader?modules&localIdentName=[local]-[hash:base64:5]", "less-loader"]
+                })
             }, {
-                test: /(\.jsx|\.js)$/,
-                use: [{
-                    loader: 'babel-loader',
-                    options: {
-                        presets: [
-                            "env", "react", "stage-0"
-                        ]
-                    }
-                }]
+                test: /\.(js|jsx)$/,
+                exclude: /node_modules/,
+                use: ['babel-loader']
+            }, {
+                test: /\.css$/,
+                use: ['style-loader', 'css-loader']
             }
         ]
     },
+    externals: {
+        'react': 'React',
+        'react-dom': 'ReactDOM',
+    },
 };
-if (process.env.MY_NODE_ENV === 'develop') {
+if (process.env.MY_NODE_ENV === 'example') {
     config = {
         ...config,
-        module: {
-            rules: [
-                ...config.module.rules,
-            ]
-        },
         entry: './example/index.js',
         devtool: 'inline-source-map',
         devServer: {
-            contentBase: './dist',
+            contentBase: './docs',
             hot: true
         },
+
         plugins: [
             ...config.plugins,
-            new CleanWebpackPlugin(['dist']),
-            new HtmlWebpackPlugin({
-                title: 'Development'
-            }),
-            new webpack.NamedModulesPlugin(),
-            new webpack.HotModuleReplacementPlugin()
+            // new CleanWebpackPlugin(['docs']),
+            // new HtmlWebpackPlugin({
+            //     title: 'Development'
+            // }),
         ],
         output: {
-            filename: '[name].bundle.js',
-            path: path.resolve(__dirname, 'dist')
-        }
+            filename: 'index.js',
+            path: path.resolve(__dirname, 'docs')
+        },
+        resolve: {
+            alias: {
+                scoreboard: path.resolve(__dirname, 'src/scoreboard'),
+            }
+        },
+        externals:{}
     };
+    console.log('config.module.rules', config.module.rules)
 }
+
 module.exports = config;
+
+
+
+
 
