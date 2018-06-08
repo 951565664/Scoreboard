@@ -1,0 +1,232 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+.animation-num-box-2Gnua {
+  height: 48px;
+  overflow: hidden;
+}
+.animation-num-box-2Gnua .animation-num-item-box-2Wr1t {
+  display: inline-block;
+  height: 100%;
+  overflow: hidden;
+}
+.animation-num-box-2Gnua .animation-num-1nuyU {
+  transition: margin;
+  -webkit-transition: margin;
+  -o-transition: margin;
+  -ms-transition: margin;
+  float: left;
+  display: block;
+  height: 100%;
+}
+.animation-num-box-2Gnua .animation-num-1nuyU > li {
+  list-style: none;
+  width: 100%;
+  height: 100%;
+  display: table;
+}
+.animation-num-box-2Gnua .animation-num-1nuyU > li .li-inner-3qpmS {
+  display: table-cell;
+  vertical-align: middle;
+}
+.animation-num-box-2Gnua .currentNum-0-2hl5h {
+  transition: margin;
+  -webkit-transition: margin;
+  -o-transition: margin;
+  -ms-transition: margin;
+  float: left;
+  display: block;
+  height: 100%;
+  margin-top: 0px;
+}
+.animation-num-box-2Gnua .currentNum-0-2hl5h > li {
+  list-style: none;
+  width: 100%;
+  height: 100%;
+  display: table;
+}
+.animation-num-box-2Gnua .currentNum-0-2hl5h > li .li-inner-3qpmS {
+  display: table-cell;
+  vertical-align: middle;
+}
+.animation-num-box-2Gnua .currentNum-1-2uLaB {
+  transition: margin;
+  -webkit-transition: margin;
+  -o-transition: margin;
+  -ms-transition: margin;
+  float: left;
+  display: block;
+  height: 100%;
+  margin-top: -48px;
+}
+.animation-num-box-2Gnua .currentNum-1-2uLaB > li {
+  list-style: none;
+  width: 100%;
+  height: 100%;
+  display: table;
+}
+.animation-num-box-2Gnua .currentNum-1-2uLaB > li .li-inner-3qpmS {
+  display: table-cell;
+  vertical-align: middle;
+}
+.animation-num-box-2Gnua .currentNum-2-2PivJ {
+  transition: margin;
+  -webkit-transition: margin;
+  -o-transition: margin;
+  -ms-transition: margin;
+  float: left;
+  display: block;
+  height: 100%;
+  margin-top: -96px;
+}
+.animation-num-box-2Gnua .currentNum-2-2PivJ > li {
+  list-style: none;
+  width: 100%;
+  height: 100%;
+  display: table;
+}
+.animation-num-box-2Gnua .currentNum-2-2PivJ > li .li-inner-3qpmS {
+  display: table-cell;
+  vertical-align: middle;
+}
+.animation-num-box-2Gnua .currentNum-3-1s48m {
+  transition: margin;
+  -webkit-transition: margin;
+  -o-transition: margin;
+  -ms-transition: margin;
+  float: left;
+  display: block;
+  height: 100%;
+  margin-top: -144px;
+}
+.animation-num-box-2Gnua .currentNum-3-1s48m > li {
+  list-style: none;
+  width: 100%;
+  height: 100%;
+  display: table;
+}
+.animation-num-box-2Gnua .currentNum-3-1s48m > li .li-inner-3qpmS {
+  display: table-cell;
+  vertical-align: middle;
+}
+.animation-num-box-2Gnua .currentNum-4-SdkG8 {
+  transition: margin;
+  -webkit-transition: margin;
+  -o-transition: margin;
+  -ms-transition: margin;
+  float: left;
+  display: block;
+  height: 100%;
+  margin-top: -192px;
+}
+.animation-num-box-2Gnua .currentNum-4-SdkG8 > li {
+  list-style: none;
+  width: 100%;
+  height: 100%;
+  display: table;
+}
+.animation-num-box-2Gnua .currentNum-4-SdkG8 > li .li-inner-3qpmS {
+  display: table-cell;
+  vertical-align: middle;
+}
+.animation-num-box-2Gnua .currentNum-5-3EWqy {
+  transition: margin;
+  -webkit-transition: margin;
+  -o-transition: margin;
+  -ms-transition: margin;
+  float: left;
+  display: block;
+  height: 100%;
+  margin-top: -240px;
+}
+.animation-num-box-2Gnua .currentNum-5-3EWqy > li {
+  list-style: none;
+  width: 100%;
+  height: 100%;
+  display: table;
+}
+.animation-num-box-2Gnua .currentNum-5-3EWqy > li .li-inner-3qpmS {
+  display: table-cell;
+  vertical-align: middle;
+}
+.animation-num-box-2Gnua .currentNum-6-cFvXR {
+  transition: margin;
+  -webkit-transition: margin;
+  -o-transition: margin;
+  -ms-transition: margin;
+  float: left;
+  display: block;
+  height: 100%;
+  margin-top: -288px;
+}
+.animation-num-box-2Gnua .currentNum-6-cFvXR > li {
+  list-style: none;
+  width: 100%;
+  height: 100%;
+  display: table;
+}
+.animation-num-box-2Gnua .currentNum-6-cFvXR > li .li-inner-3qpmS {
+  display: table-cell;
+  vertical-align: middle;
+}
+.animation-num-box-2Gnua .currentNum-7-1TC1l {
+  transition: margin;
+  -webkit-transition: margin;
+  -o-transition: margin;
+  -ms-transition: margin;
+  float: left;
+  display: block;
+  height: 100%;
+  margin-top: -336px;
+}
+.animation-num-box-2Gnua .currentNum-7-1TC1l > li {
+  list-style: none;
+  width: 100%;
+  height: 100%;
+  display: table;
+}
+.animation-num-box-2Gnua .currentNum-7-1TC1l > li .li-inner-3qpmS {
+  display: table-cell;
+  vertical-align: middle;
+}
+.animation-num-box-2Gnua .currentNum-8-1-6ba {
+  transition: margin;
+  -webkit-transition: margin;
+  -o-transition: margin;
+  -ms-transition: margin;
+  float: left;
+  display: block;
+  height: 100%;
+  margin-top: -384px;
+}
+.animation-num-box-2Gnua .currentNum-8-1-6ba > li {
+  list-style: none;
+  width: 100%;
+  height: 100%;
+  display: table;
+}
+.animation-num-box-2Gnua .currentNum-8-1-6ba > li .li-inner-3qpmS {
+  display: table-cell;
+  vertical-align: middle;
+}
+.animation-num-box-2Gnua .currentNum-9-3b0ik {
+  transition: margin;
+  -webkit-transition: margin;
+  -o-transition: margin;
+  -ms-transition: margin;
+  float: left;
+  display: block;
+  height: 100%;
+  margin-top: -432px;
+}
+.animation-num-box-2Gnua .currentNum-9-3b0ik > li {
+  list-style: none;
+  width: 100%;
+  height: 100%;
+  display: table;
+}
+.animation-num-box-2Gnua .currentNum-9-3b0ik > li .li-inner-3qpmS {
+  display: table-cell;
+  vertical-align: middle;
+}

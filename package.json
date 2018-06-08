@@ -1,0 +1,47 @@
+{
+  "name": "scoreboard-react",
+  "version": "1.0.4",
+  "description": "a scoreboard animation with react",
+  "main": "index.js",
+  "scripts": {
+    "start": "cross-env MY_NODE_ENV=example webpack-dev-server --open",
+    "start:testPackage": "cross-env MY_NODE_ENV=testPackage webpack-dev-server --open",
+    "build:example": "cross-env MY_NODE_ENV=example webpack",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/951565664/Scoreboard.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/951565664/Scoreboard/issues"
+  },
+  "homepage": "https://github.com/951565664/Scoreboard#readme",
+  "dependencies": {
+    "prop-types": "^15.6.1",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "css-loader": "^0.28.11",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "less": "^3.0.4",
+    "less-loader": "^4.1.0",
+    "style-loader": "^0.21.0",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.11.1",
+    "webpack-cli": "^3.0.2",
+    "file-loader": "^1.1.6",
+    "html-loader": "^0.5.5"
+  }
+}

@@ -1,0 +1,41 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.animation-num-box {
+    height: 48px;
+    overflow: hidden;
+    .animation-num-item-box {
+        display: inline-block;
+        height: 100%;
+        overflow: hidden;
+    }
+    .animation-num {
+        transition: margin;
+        -webkit-transition: margin;
+        -o-transition: margin;
+        -ms-transition: margin;
+        float: left;
+        display: block;
+        height: 100%;
+        &>li {
+            list-style: none;
+            width: 100%; //  font-size:        
+            height: 100%;
+            display: table;
+            .li-inner {
+                display: table-cell;
+                vertical-align: middle;
+            }
+        }
+    }
+    .generate-currentNum(9);
+    .generate-currentNum(@n, @i: 0) when (@i =< @n) {
+        .currentNum-@{i} {
+            .animation-num(); //  font-size:        
+            margin-top: @i *-48px;
+        }
+        .generate-currentNum(@n, (@i + 1));
+    }
+}
