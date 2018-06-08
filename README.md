@@ -16,7 +16,7 @@ yarn install scoreboard-react --save
 import Scoreboard from 'scoreboard';
 ```
 
-## Demo
+## [Demo](https://951565664.github.io/Scoreboard/)
 
 ```jsx
 import React, { Component } from 'react';

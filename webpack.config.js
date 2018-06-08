@@ -41,7 +41,7 @@ let config = {
         'react-dom': 'ReactDOM',
     },
 };
-if (process.env.MY_NODE_ENV === 'example') {
+if (process.env.MY_NODE_ENV === 'example' || process.env.MY_NODE_ENV === 'exampleBuild') {
     config = {
         ...config,
         entry: './example/index.js',
@@ -64,14 +64,13 @@ if (process.env.MY_NODE_ENV === 'example') {
         },
         resolve: {
             alias: {
-                scoreboard: path.resolve(__dirname, 'src/scoreboard'),
+                'scoreboard-react': path.resolve(__dirname,),
             }
         },
+        
         externals:{}
     };
-    console.log('config.module.rules', config.module.rules)
 }
-
 module.exports = config;
 
 
