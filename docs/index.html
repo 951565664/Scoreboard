@@ -12,44 +12,6 @@
 <body>
     <div id="root"></div>
     <div id="markdown"><h1>Scoreboard</h1>
-<p>a scoreboard width React</p>
-<h2>Install</h2>
-<pre><code class="language-bash">npm install scoreboard-react --save
-</code></pre>
-<p>or</p>
-<pre><code class="language-bash">yarn install scoreboard-react --save
-</code></pre>
-<h2>Usage</h2>
-<pre><code class="language-js">import Scoreboard from &apos;scoreboard&apos;;
-</code></pre>
-<h2>Demo</h2>
-<pre><code class="language-jsx">import React, { Component } from &apos;react&apos;;
-import ReactDOM from &apos;react-dom&apos;;
-import Scoreboard from &apos;scoreboard&apos;;
-
-const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
-class App extends Component {
-    state = {
-        key: 2
-    }
-    render() {
-        let numberStr = new Array(this.state.key).fill(1).map((item) =&gt; parseInt(Math.random() * 10)).reduce((prev, curr, index, array) =&gt; &apos;&apos; + prev + curr);
-        return (
-            &lt;div onClick={() =&gt; {
-                this.setState({
-                    key: parseInt(Math.random() * 10) + 2
-                })
-            }} style={{ width: &apos;100%&apos; }}&gt;
-                &lt;Scoreboard numberStr={numberStr} transitionDuration={&apos;1s&apos;} numberStyle={{ color: &apos;#c40000&apos;,fontSize:&apos;20px&apos; }} /&gt;
-            &lt;/div&gt;
-        );
-    }
-}
-
-ReactDOM.render(&lt;App /&gt;
-    , document.getElementById(&apos;root&apos;)
-);
-</code></pre>
 </div>
     <script type="text/javascript" src="./index.js"></script>
 
