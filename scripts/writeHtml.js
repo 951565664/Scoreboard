@@ -20,14 +20,14 @@ async function readAllFile(srcArr) {
 
 /* 插入markdown */
 async function writeHtml(mdHtml, html) {
-    const $ = cheerio.load(html)
+    const $ = cheerio.load(html);
     $('#markdown').html(mdHtml);
     return new Promise(function (resolve, reject) {
         fs.writeFile(path.join(__dirname, '../docs/index.html'), $.html(), (err) => {
             if (err) throw err;
             console.log('successful!The file has been changed!');
         });
-    })
+    });
 }
 
 /* 渲染markdown到html中 */
@@ -45,6 +45,3 @@ async function renderMarkDown([htmlFileSrc, ...mdFileSrc]) {
 }
 
 renderMarkDown(['../README.md', '../docs/index.html']);
-
-
-

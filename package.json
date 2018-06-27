@@ -1,13 +1,14 @@
 {
   "name": "scoreboard-react",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "a scoreboard animation with react",
   "main": "index.js",
   "scripts": {
     "start": "cross-env MY_NODE_ENV=example webpack-dev-server --open",
     "build:example": "cross-env MY_NODE_ENV=example webpack",
     "build": "webpack",
-    "markdown": "node scripts/markdown"
+    "writeHtml": "node scripts/writeHtml",
+    "writeMakedownDemo": "node scripts/writeMakedownDemo"
   },
   "repository": {
     "type": "git",
@@ -19,6 +20,10 @@
     "url": "https://github.com/951565664/Scoreboard/issues"
   },
   "homepage": "https://github.com/951565664/Scoreboard#readme",
+  "peerdependencies": {
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0"
+  },
   "dependencies": {
     "prop-types": "^15.6.1",
     "react": "^16.4.0",

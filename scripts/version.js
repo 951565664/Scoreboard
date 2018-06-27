@@ -23,4 +23,4 @@ const start = async () => {
   await writeVersion()
 }
 
-start()
+start();
