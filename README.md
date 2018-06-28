@@ -1,6 +1,7 @@
 # Scoreboard
 a scoreboard width React
 
+https://951565664.github.io/Scoreboard/
 ## Install
 
 ```bash
