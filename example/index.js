@@ -6,7 +6,11 @@ import styles from './index.less'
 const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
 class App extends Component {
     state = {
-        key: 2
+        key: 2,
+        _numberStr: '00',
+        _transitionDuration: '1',
+        transitionDuration: '1',
+        numberStr: '00'
     }
     changeNum = (params) => {
         this.setState({
@@ -32,8 +36,29 @@ class App extends Component {
                         />
                     </a>
                 </div>
-                <div onClick={this.changeNum} style={{ width: '100%' }}>
+                <div onClick={this.changeNum} className={styles["box"]}>
                     <Scoreboard numberStr={numberStr} transitionDuration={'1s'} numberStyle={{ color: '#c40000', fontSize: '20px' }} />
+                </div>
+                <div onClick={this.changeNum} className={styles["box"]}>
+                    <div className={styles["form"]}>
+                        <label htmlFor="num">数字</label>
+                        <input id="num" type="text" value={this.state._numberStr} onChange={(e) => {
+                            this.setState({
+                                _numberStr: e.target.value
+                            })
+                        }} />
+                        <label htmlFor="duration">时间</label>
+                        <input id="duration" type="text" value={this.state._transitionDuration} onChange={(e) => {
+                            this.setState({
+                                _transitionDuration: e.target.value
+                            })
+                        }} />
+                        <div className={styles["button"]} onClick={() => this.setState({
+                            numberStr: this.state._numberStr,
+                            transitionDuration: this.state._transitionDuration
+                        })}>变更</div>
+                    </div>
+                    <Scoreboard numberStr={this.state.numberStr} transitionDuration={parseInt(this.state.transitionDuration)+'s'} numberStyle={{ color: '#c40000', fontSize: '20px' }} />
                 </div>
             </div>
         );

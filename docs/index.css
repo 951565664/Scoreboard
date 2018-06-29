@@ -7,5 +7,34 @@
   top: 0px;
   right: 0px;
 }
+.box-20-7P {
+  padding: 40px;
+  width: 100%;
+}
+.form-ozcj9 {
+  height: 40px;
+}
+.form-ozcj9 input,
+.form-ozcj9 .button-3fjKl {
+  height: 100%;
+  line-height: 40px;
+  margin-right: 8px;
+}
+.form-ozcj9 .button-3fjKl {
+  background-color: #1890ff;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  width: 78.9271px;
+}
+.form-ozcj9:after {
+  clear: both;
+  height: 0px;
+  visibility: hidden;
+  display: block;
+  content: ' ';
+}
 
 /*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJpbmRleC5jc3MiLCJzb3VyY2VSb290IjoiIn0=*/

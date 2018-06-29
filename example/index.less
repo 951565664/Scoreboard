@@ -1,10 +1,40 @@
-.wrapper{
+.wrapper {
     margin: 40px auto;
     text-align: center;
 }
 
-.forkMe{
+.forkMe {
     position: absolute;
     top: 0px;
     right: 0px;
+}
+.box{
+    padding: 40px;
+    width: 100%;
+    // text-align: left
+}
+.form {
+    height: 40px;
+    input,
+    .button {
+        height: 100%;
+        line-height: 40px;
+        margin-right:8px;
+    }
+    .button {
+        background-color: #1890ff;
+        border-radius: 4px;
+        box-sizing: border-box;
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+        display: inline-block;
+        width: 78.9271px;
+    }
+    &:after {
+        clear: both;
+        height: 0px;
+        visibility: hidden;
+        display: block;
+        content: ' ';
+    }
 }
